@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+}
+
+#button {
+  background-color: aqua;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.cards-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 800px;
+  margin-top: 20px;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  min-height: 100px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background-color: purple;
+  transition: scale 1s;
+}
+
+.card:hover {
+  scale: 0.98;
+}
+
+.card:not(:last-child) {
+  margin-right: 20px;
+}
